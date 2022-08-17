@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+$Strong_cyan: hsl(172, 67%, 45%);
+$Very_dark_cyan: hsl(183, 100%, 15%);
+$Dark_grayish_cyan: hsl(186, 14%, 43%);
+$Grayish_cyan: hsl(184, 14%, 56%);
+$Light_grayish_cyan: hsl(185, 41%, 84%);
+$Very_light_grayish_cyan: hsl(189, 41%, 97%);
+$White: hsl(0, 0%, 100%);
+
+* *::before *::after {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+body {
+    background-color: $Light_grayish_cyan;
+    font-family: "Space Mono";
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    main {
+        .main-msg-container {
+            font-size: 0.7rem;
+            line-height: 1.2;
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            color: $Very_dark_cyan;
+            .main-msg {
+                margin-top: 5vh;
+                letter-spacing: .4rem;
+                text-transform: uppercase;
+            }
+        }
+        .calc-container {
+            margin-top: 5vh;
+            margin-bottom: 10vh;
+            background-origin: $White;
+        }
+    }
+}
