@@ -15,34 +15,3 @@ $White: hsl(0, 0%, 100%);
     font-weight: 700;
     font-size: 24px;
 }
-
-body {
-    background-color: $Light_grayish_cyan;
-    font-family: "Space Mono";
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    main {
-        .main-msg-container {
-            font-size: 0.7rem;
-            line-height: 1.2;
-            display: flex;
-            margin: auto;
-            justify-content: center;
-            color: $Very_dark_cyan;
-            .main-msg {
-                margin-top: 5vh;
-                letter-spacing: .4rem;
-                text-transform: uppercase;
-            }
-        }
-        .calc-container {
-            margin-top: 5vh;
-            margin-bottom: 10vh;
-            background-origin: $White;
-        }
-    }
-}
