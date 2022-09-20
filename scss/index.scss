@@ -5,6 +5,7 @@
     margin: 0px;
     box-sizing: border-box;
     font-family: 'Space Mono', monospace;
+    font-weight: 700;
 }
 
 $Strong_cyan: hsl(172, 67%, 45%);
@@ -21,4 +22,16 @@ body {
     min-height:100vh;
     font-family: 'Space Mono', monospace;
     background: $Light_grayish_cyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    main {
+        padding: 32px;
+        margin-top: 48px;
+        width: 600px;
+        height: 384px;
+        background: $White;
+        border-radius: 28px;
+    }
 }
