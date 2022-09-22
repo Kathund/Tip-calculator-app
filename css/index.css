@@ -1,10 +1,15 @@
+/*
+https://jsbin.com/vizepotara/edit?html,css,output
+https://jsbin.com/xitonolixi/edit?html,js,output
+*/
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
-* *::before *::after {
+*, *::before, *::after {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
   font-family: "Space Mono", monospace;
   font-weight: 700;
+  font-size: 24px;
 }
 
 body {
@@ -20,8 +25,27 @@ body {
 body main {
   padding: 32px;
   margin-top: 48px;
-  width: 600px;
-  height: 384px;
+  width: 800px;
+  height: 412px;
   background: hsl(0deg, 0%, 100%);
   border-radius: 28px;
+}
+body main .input {
+  width: 380px;
+}
+body main .input form label {
+  font-size: 16px;
+  color: hsla(183deg, 100%, 15%, 0.5);
+}
+body main .input form input {
+  text-align: right;
+  z-index: -1;
+  border: none;
+  background: hsl(189deg, 41%, 97%);
+}
+body main .input form img {
+  position: absolute;
+  z-index: 1;
+  padding-left: 12px;
+  padding-top: 12px;
 }/*# sourceMappingURL=index.css.map */
