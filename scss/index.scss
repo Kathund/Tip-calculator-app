@@ -1,18 +1,22 @@
+/*
 https://jsbin.com/vizepotara/edit?html,css,output
 https://jsbin.com/xitonolixi/edit?html,js,output
+*/
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
 
-* *::before *::after {
+*, *::before, *::after {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-family: 'Space Mono', monospace;
     font-weight: 700;
+    font-size: 24px;
 }
 
 $Strong_cyan: hsl(172, 67%, 45%);
 $Very_dark_cyan: hsl(183, 100%, 15%);
+$label_text: hsla(183, 100%, 15%, 0.5);
 $Dark_grayish_cyan: hsl(186, 14%, 43%);
 $Grayish_cyan: hsl(184, 14%, 56%);
 $Light_grayish_cyan: hsl(185, 41%, 84%);
@@ -32,9 +36,30 @@ body {
     main {
         padding: 32px;
         margin-top: 48px;
-        width: 600px;
-        height: 384px;
+        width: 800px;
+        height: 412px;
         background: $White;
         border-radius: 28px;
+        .input {
+            width: 380px;
+            form {
+                label {
+                    font-size: 16px;
+                    color: $label_text;
+                }
+                input {
+                    text-align: right;
+                    z-index: -1;
+                    border: none;
+                    background: $Very_light_grayish_cyan;
+                }
+                img {
+                    position: absolute;
+                    z-index: 1;
+                    padding-left: 12px;
+                    padding-top: 12px;
+                }
+            }
+        }
     }
 }
