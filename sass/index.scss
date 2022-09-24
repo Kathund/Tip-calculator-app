@@ -24,3 +24,38 @@ body {
     align-items: center;
     min-height:100vh;
     flex-direction: column;
+    main {
+        width: 375px;
+        background-color: $White;
+        border-radius: 10px;
+        padding: 2rem;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: row;
+        .input {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-right: 1rem;
+            label {
+                font-size: 0.8rem;
+                font-weight: 700;
+                margin-bottom: 0.5rem;
+            }
+            input {
+                padding: 0.5rem;
+                border: 1px solid $Grayish_cyan;
+                border-radius: 5px;
+                font-size: 1rem;
+                font-weight: 700;
+                color: $Very_dark_cyan;
+                background-color: $Very_light_grayish_cyan;
+                margin-bottom: 1rem;
+                &:focus {
+                    outline: none;
+                    border: 1px solid $Strong_cyan;
+                }
+            }
+        }
+    }
+}
