@@ -4,6 +4,8 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
 }
 
 $Strong_cyan: hsl(172, 67%, 45%);
@@ -16,7 +18,6 @@ $White: hsl(0, 0%, 100%);
 $Black: hsl(0, 0%, 0%);
 
 body {
-    font-family: 'Space Mono', monospace;
     background-color: $Light_grayish_cyan;
     color: $Very_dark_cyan;
     display: flex;
@@ -25,35 +26,90 @@ body {
     min-height:100vh;
     flex-direction: column;
     main {
-        width: 375px;
+        width: 666px;
+        height: 348px;
         background-color: $White;
-        border-radius: 10px;
+        border-radius: 16px;
         padding: 2rem;
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: row;
+        margin-top: 49px;
+        margin-bottom: 38px;
         .input {
-            width: 100%;
+            width: 50%;
             display: flex;
             flex-direction: column;
             margin-right: 1rem;
-            label {
-                font-size: 0.8rem;
-                font-weight: 700;
-                margin-bottom: 0.5rem;
-            }
-            input {
-                padding: 0.5rem;
-                border: 1px solid $Grayish_cyan;
-                border-radius: 5px;
-                font-size: 1rem;
-                font-weight: 700;
-                color: $Very_dark_cyan;
-                background-color: $Very_light_grayish_cyan;
+            .input__bill {
                 margin-bottom: 1rem;
-                &:focus {
-                    outline: none;
-                    border: 1px solid $Strong_cyan;
+                display: flex;
+                flex-direction: column;
+                label {
+                    margin-bottom: 0.5rem;
+                    font-size: 0.75rem;
+                    color: $Dark_grayish_cyan;
+                }
+                .input__bill--container {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    background-color: $Very_light_grayish_cyan;
+                    border-radius: 8px;
+                    padding: 0.5rem;
+                    img {
+                        margin-right: 0.5rem;
+                        z-index: 2;
+                    }
+                    input {
+                        font-size: 24px;
+                        border: none;
+                        background-color: transparent;
+                        width: 100%;
+                        font-size: 1rem;
+                        color: $Very_dark_cyan;
+                        padding: 0.5rem;
+                        z-index: 1;
+                        text-align: right;
+                    }
+                }
+            }
+            .input__tip {
+                display: flex;
+                flex-direction: column;
+                label {
+                    margin-bottom: 0.5rem;
+                    font-size: 0.75rem;
+                    color: $Dark_grayish_cyan;
+                }
+                .input__tip--container {
+                    .input__tip--buttons {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        grid-template-rows: repeat(2, 1fr);
+                        grid-gap: 0.5rem;
+                        .input__tip--button {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: $Very_light_grayish_cyan;
+                            border-radius: 8px;
+                            padding: 0.5rem;
+                            font-size: 1rem;
+                            color: $Very_dark_cyan;
+                            cursor: pointer;
+                            &:hover {
+                                background-color: $Light_grayish_cyan;
+                            }
+                            &.active {
+                                background-color: $Strong_cyan;
+                                color: $White;
+                            }
+                        }
+                        // TODO work on button styling
+                        // try using https://codepen.io/TexV/pen/pwywNW as a reference
+                    }
                 }
             }
         }
