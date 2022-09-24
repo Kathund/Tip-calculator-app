@@ -8,5 +8,40 @@
   <title>Frontend Mentor | Tip calculator app</title>
 </head>
 <body>
+  <img src="images/logo.svg" alt="logo">
+  <main>
+    <div class="input">
+      <div class="input__bill">
+        <label for="bill">Bill</label>
+        <div class="input__bill--container">
+          <span>$</span>
+          <input type="number" id="bill" placeholder="0">
+        </div>
+      </div>
+      <div class="input__tip">
+        <label for="tip">Select Tip %</label>
+        <div class="input__tip--container">
+          <div class="input__tip--custom">
+            <input type="number" id="tip" placeholder="Custom">
+            <span>%</span>
+          </div>
+          <div class="input__tip--buttons">
+            <button class="input__tip--button">5%</button>
+            <button class="input__tip--button">10%</button>
+            <button class="input__tip--button">15%</button>
+            <button class="input__tip--button">25%</button>
+            <button class="input__tip--button">50%</button>
+          </div>
+        </div>
+      </div>
+      <div class="input__people">
+        <label for="people">Number of People</label>
+        <div class="input__people--container">
+          <input type="number" id="people" placeholder="0">
+        </div>
+      </div>
+    </div>
+    <div class="output"></div>
+  </main>
 </body>
 </html>
