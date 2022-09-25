@@ -76,6 +76,10 @@ body main .input .input__tip label {
   font-size: 0.75rem;
   color: hsl(186deg, 14%, 43%);
 }
+body main .input .input__tip .input__tip--container {
+  width: 301px;
+  height: 96px;
+}
 body main .input .input__tip .input__tip--container .input__tip--buttons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
