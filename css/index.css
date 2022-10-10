@@ -18,7 +18,7 @@ body {
 }
 body main {
   width: 666px;
-  height: 348px;
+  height: 368px;
   background-color: hsl(0deg, 0%, 100%);
   border-radius: 16px;
   padding: 2rem;
@@ -85,8 +85,10 @@ body main .input .input__tip .input__tip--container .input__tip--buttons {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 0.5rem;
+  width: 301px;
 }
 body main .input .input__tip .input__tip--container .input__tip--buttons .input__tip--button {
+  width: 95px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -95,8 +97,11 @@ body main .input .input__tip .input__tip--container .input__tip--buttons .input_
   border-radius: 8px;
   padding: 0.5rem;
   font-size: 1rem;
-  color: hsl(183deg, 100%, 15%);
+  border: none;
+  font-weight: 700;
   cursor: pointer;
+  background-color: hsl(183deg, 100%, 15%);
+  color: hsl(189deg, 41%, 97%);
 }
 body main .input .input__tip .input__tip--container .input__tip--buttons .input__tip--button:hover {
   background-color: hsl(185deg, 41%, 84%);
@@ -104,4 +109,7 @@ body main .input .input__tip .input__tip--container .input__tip--buttons .input_
 body main .input .input__tip .input__tip--container .input__tip--buttons .input__tip--button.active {
   background-color: hsl(172deg, 67%, 45%);
   color: hsl(0deg, 0%, 100%);
+}
+body main .input .input__tip .input__tip--container .input__tip--buttons .input__tip--button .input__tip--custom {
+  background-color: hsl(189deg, 41%, 97%) !important;
 }/*# sourceMappingURL=index.css.map */
