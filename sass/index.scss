@@ -27,7 +27,7 @@ body {
     flex-direction: column;
     main {
         width: 666px;
-        height: 348px;
+        height: 368px;
         background-color: $White;
         border-radius: 16px;
         padding: 2rem;
@@ -90,7 +90,9 @@ body {
                         grid-template-columns: repeat(3, 1fr);
                         grid-template-rows: repeat(2, 1fr);
                         grid-gap: 0.5rem;
+                        width: 301px;
                         .input__tip--button {
+                            width: 95px;
                             display: flex;
                             flex-direction: row;
                             align-items: center;
@@ -99,14 +101,20 @@ body {
                             border-radius: 8px;
                             padding: 0.5rem;
                             font-size: 1rem;
-                            color: $Very_dark_cyan;
+                            border: none;
+                            font-weight: 700;
                             cursor: pointer;
+                            background-color: $Very_dark_cyan;
+                            color: $Very_light_grayish_cyan;
                             &:hover {
                                 background-color: $Light_grayish_cyan;
                             }
                             &.active {
                                 background-color: $Strong_cyan;
                                 color: $White;
+                            }
+                            .input__tip--custom {
+                                background-color: $Very_light_grayish_cyan !important;
                             }
                         }
                         // TODO work on button styling
