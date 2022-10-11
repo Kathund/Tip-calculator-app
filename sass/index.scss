@@ -178,20 +178,66 @@ body {
             border-radius: 8px;
             display: flex;
             flex-direction: column;
-            padding: 1rem;
+            padding: 2rem;
             color: $White;
             .output__tip {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 margin-bottom: 1rem;
-                .output__tip--title {
+                .output__tip--text {
                     font-size: 0.75rem;
                     color: $Light_grayish_cyan;
+                    .output__tip--person {
+                        font-size: 0.6rem;
+                        color: $Grayish_cyan;
+                        font-weight: 700;
+                    }
                 }
                 .output__tip--amount {
-                    font-size: 1.5rem;
+                    font-size: 2rem;
+                    font-weight: 700;   
+                    color: $Strong_cyan;                
+                }
+            }
+            .output__total {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                .output__total--text {
+                    font-size: 0.75rem;
+                    color: $Light_grayish_cyan;
+                    .output__tip--person {
+                        font-size: 0.6rem;
+                        color: $Grayish_cyan;
+                        font-weight: 700;                        
+                    }
+                }
+                .output__total--amount {
+                    font-size: 2rem;
                     font-weight: 700;
+                    color: $Strong_cyan;
+                }
+            }
+            .output__reset {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                button {
+                    background-color: transparent;
+                    border: none;
+                    font-size: 0.75rem;
+                    color: $Strong_cyan;
+                    font-weight: 700;
+                    cursor: pointer;
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
         }
