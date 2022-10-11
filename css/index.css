@@ -165,7 +165,7 @@ body main .output {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 2rem;
   color: hsl(0deg, 0%, 100%);
 }
 body main .output .output__tip {
@@ -174,11 +174,57 @@ body main .output .output__tip {
   justify-content: space-between;
   margin-bottom: 1rem;
 }
-body main .output .output__tip .output__tip--title {
+body main .output .output__tip .output__tip--text {
   font-size: 0.75rem;
   color: hsl(185deg, 41%, 84%);
 }
-body main .output .output__tip .output__tip--amount {
-  font-size: 1.5rem;
+body main .output .output__tip .output__tip--text .output__tip--person {
+  font-size: 0.6rem;
+  color: hsl(184deg, 14%, 56%);
   font-weight: 700;
+}
+body main .output .output__tip .output__tip--amount {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(172deg, 67%, 45%);
+}
+body main .output .output__total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+body main .output .output__total .output__total--text {
+  font-size: 0.75rem;
+  color: hsl(185deg, 41%, 84%);
+}
+body main .output .output__total .output__total--text .output__tip--person {
+  font-size: 0.6rem;
+  color: hsl(184deg, 14%, 56%);
+  font-weight: 700;
+}
+body main .output .output__total .output__total--amount {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(172deg, 67%, 45%);
+}
+body main .output .output__reset {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+body main .output .output__reset button {
+  background-color: transparent;
+  border: none;
+  font-size: 0.75rem;
+  color: hsl(172deg, 67%, 45%);
+  font-weight: 700;
+  cursor: pointer;
+}
+body main .output .output__reset button:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=index.css.map */
