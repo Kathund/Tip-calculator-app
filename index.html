@@ -34,13 +34,38 @@
         </div>
       </div>
       <div class="input__people">
-        <label for="people">Number of People</label>
+        <div class="text">
+          <label for="people">Number of People</label>
+          <label class="zero hidden" for="people">Can't be zero</label>
+        </div>
         <div class="input__people--container">
-          <input type="number" id="people" placeholder="0">
+          <img src="images/icon-person.svg" alt="">
+          <input type="text" id="people" placeholder="0">
         </div>
       </div>
     </div>
-    <div class="output"></div>
+    <div class="output">
+      <div class="output__tip">
+        <div class="output__tip--text">
+          <p>Tip Amount</p>
+          <p>/ person</p>
+        </div>
+        <div class="output__tip--amount">
+          <p>$ <span class="output__tip--amount--number">0.00</span></p>
+        </div>
+      </div>
+      <div class="output__total">
+        <div class="output__total--text">
+          <p>Total</p>
+          <p>/ person</p>
+        </div>
+        <div class="output__total--amount">
+          <p>$ <span class="output__total--amount--number">0.00</span></p>
+          
+        </div>
+      </div>
+      <button class="output__reset">Reset</button>
+    </div>
   </main>
 </body>
 </html>
