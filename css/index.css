@@ -87,6 +87,10 @@ body main .input .input__tip .input__tip--container .input__tip--buttons {
   grid-gap: 0.5rem;
   width: 301px;
 }
+body main .input .input__tip .input__tip--container .input__tip--buttons .input__tip--custom input {
+  background-color: hsl(189deg, 41%, 97%) !important;
+  color: hsl(183deg, 100%, 15%) !important;
+}
 body main .input .input__tip .input__tip--container .input__tip--buttons .input__tip--button {
   width: 95px;
   display: flex;
@@ -110,6 +114,71 @@ body main .input .input__tip .input__tip--container .input__tip--buttons .input_
   background-color: hsl(172deg, 67%, 45%);
   color: hsl(0deg, 0%, 100%);
 }
-body main .input .input__tip .input__tip--container .input__tip--buttons .input__tip--button .input__tip--custom {
-  background-color: hsl(189deg, 41%, 97%) !important;
+body main .input .input__people {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+body main .input .input__people .text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.75rem;
+}
+body main .input .input__people .text .zero {
+  color: #d43c0e;
+}
+body main .input .input__people .text .hidden {
+  display: none;
+}
+body main .input .input__people label {
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+  color: hsl(186deg, 14%, 43%);
+}
+body main .input .input__people .input__people--container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: hsl(189deg, 41%, 97%);
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+body main .input .input__people .input__people--container img {
+  margin-right: 0.5rem;
+  z-index: 2;
+}
+body main .input .input__people .input__people--container input {
+  font-size: 24px;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  font-size: 1rem;
+  color: hsl(183deg, 100%, 15%);
+  padding: 0.5rem;
+  z-index: 1;
+  text-align: right;
+}
+body main .output {
+  background-color: hsl(183deg, 100%, 15%);
+  width: 50%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  color: hsl(0deg, 0%, 100%);
+}
+body main .output .output__tip {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+body main .output .output__tip .output__tip--title {
+  font-size: 0.75rem;
+  color: hsl(185deg, 41%, 84%);
+}
+body main .output .output__tip .output__tip--amount {
+  font-size: 1.5rem;
+  font-weight: 700;
 }/*# sourceMappingURL=index.css.map */
