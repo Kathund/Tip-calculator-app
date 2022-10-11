@@ -91,6 +91,12 @@ body {
                         grid-template-rows: repeat(2, 1fr);
                         grid-gap: 0.5rem;
                         width: 301px;
+                        .input__tip--custom {
+                            input {
+                                background-color: $Very_light_grayish_cyan !important;
+                                color: $Very_dark_cyan !important;
+                            }
+                        }
                         .input__tip--button {
                             width: 95px;
                             display: flex;
@@ -113,13 +119,79 @@ body {
                                 background-color: $Strong_cyan;
                                 color: $White;
                             }
-                            .input__tip--custom {
-                                background-color: $Very_light_grayish_cyan !important;
-                            }
                         }
                         // TODO work on button styling
                         // try using https://codepen.io/TexV/pen/pwywNW as a reference
                     }
+                }
+            }
+            .input__people {
+                .text {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    font-size: 0.75rem;
+
+                    .zero {
+                        color: #d43c0e;
+                    }
+                    .hidden {
+                        display: none;
+                    }
+                }
+                margin-top: 1rem;
+                display: flex;
+                flex-direction: column;
+                label {
+                    margin-bottom: 0.5rem;
+                    font-size: 0.75rem;
+                    color: $Dark_grayish_cyan;
+                }
+                .input__people--container {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    background-color: $Very_light_grayish_cyan;
+                    border-radius: 8px;
+                    padding: 0.5rem;
+                    img {
+                        margin-right: 0.5rem;
+                        z-index: 2;
+                    }
+                    input {
+                        font-size: 24px;
+                        border: none;
+                        background-color: transparent;
+                        width: 100%;
+                        font-size: 1rem;
+                        color: $Very_dark_cyan;
+                        padding: 0.5rem;
+                        z-index: 1;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+        .output {
+            background-color: $Very_dark_cyan;
+            width: 50%;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            color: $White;
+            .output__tip {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-bottom: 1rem;
+                .output__tip--title {
+                    font-size: 0.75rem;
+                    color: $Light_grayish_cyan;
+                }
+                .output__tip--amount {
+                    font-size: 1.5rem;
+                    font-weight: 700;
                 }
             }
         }
