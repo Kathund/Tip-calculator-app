@@ -108,12 +108,12 @@ body main .input .input__tip .input__tip--container .input__tip--buttons .input_
   color: hsl(189deg, 41%, 97%);
 }
 body main .input .input__tip .input__tip--container .input__tip--buttons .input__tip--button:hover {
-  background-color: hsl(172deg, 67%, 45%);
+  background-color: hsl(172deg, 66%, 71%);
   color: hsl(183deg, 100%, 15%);
 }
-body main .input .input__tip .input__tip--container .input__tip--buttons .input__tip--button.active {
+body main .input .input__tip .input__tip--container .input__tip--buttons .input__tip--button:focus {
   background-color: hsl(172deg, 67%, 45%);
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(183deg, 100%, 15%);
 }
 body main .input .input__people {
   margin-top: 1rem;
