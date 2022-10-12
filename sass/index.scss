@@ -113,15 +113,14 @@ body {
                             background-color: $Very_dark_cyan;
                             color: $Very_light_grayish_cyan;
                             &:hover {
-                                background-color: $Light_grayish_cyan;
+                                background-color: $Strong_cyan;
+                                color: $Very_dark_cyan;
                             }
                             &.active {
                                 background-color: $Strong_cyan;
                                 color: $White;
                             }
                         }
-                        // TODO work on button styling
-                        // try using https://codepen.io/TexV/pen/pwywNW as a reference
                     }
                 }
             }
@@ -222,22 +221,17 @@ body {
                 }
             }
             .output__reset {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                margin-top: 2rem;
-                margin-bottom: 2rem;
-                button {
-                    background-color: transparent;
-                    border: none;
-                    font-size: 0.75rem;
-                    color: $Strong_cyan;
-                    font-weight: 700;
-                    cursor: pointer;
-                    &:hover {
-                        text-decoration: underline;
-                    }
+                background-color: #0d686d;
+                border: none;
+                font-size: 0.75rem;
+                color: #045c60;
+                font-weight: 700;
+                height: 48px;
+                margin-top: 32px;
+                border-radius: 3px;
+                cursor: pointer;
+                &:hover {
+                    background-color: #9fe8df;
                 }
             }
         }
