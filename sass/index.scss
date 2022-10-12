@@ -9,6 +9,7 @@
 }
 
 $Strong_cyan: hsl(172, 67%, 45%);
+$Strongererer_cyan: hsl(172, 66%, 71%);
 $Very_dark_cyan: hsl(183, 100%, 15%);
 $Dark_grayish_cyan: hsl(186, 14%, 43%);
 $Grayish_cyan: hsl(184, 14%, 56%);
@@ -113,12 +114,12 @@ body {
                             background-color: $Very_dark_cyan;
                             color: $Very_light_grayish_cyan;
                             &:hover {
-                                background-color: $Strong_cyan;
+                                background-color: $Strongererer_cyan;
                                 color: $Very_dark_cyan;
                             }
-                            &.active {
+                            &:focus {
                                 background-color: $Strong_cyan;
-                                color: $White;
+                                color: $Very_dark_cyan;
                             }
                         }
                     }
