@@ -108,7 +108,8 @@ body main .input .input__tip .input__tip--container .input__tip--buttons .input_
   color: hsl(189deg, 41%, 97%);
 }
 body main .input .input__tip .input__tip--container .input__tip--buttons .input__tip--button:hover {
-  background-color: hsl(185deg, 41%, 84%);
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
 }
 body main .input .input__tip .input__tip--container .input__tip--buttons .input__tip--button.active {
   background-color: hsl(172deg, 67%, 45%);
@@ -210,21 +211,16 @@ body main .output .output__total .output__total--amount {
   color: hsl(172deg, 67%, 45%);
 }
 body main .output .output__reset {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-body main .output .output__reset button {
-  background-color: transparent;
+  background-color: #0d686d;
   border: none;
   font-size: 0.75rem;
-  color: hsl(172deg, 67%, 45%);
+  color: #045c60;
   font-weight: 700;
+  height: 48px;
+  margin-top: 32px;
+  border-radius: 3px;
   cursor: pointer;
 }
-body main .output .output__reset button:hover {
-  text-decoration: underline;
+body main .output .output__reset:hover {
+  background-color: #9fe8df;
 }/*# sourceMappingURL=index.css.map */
