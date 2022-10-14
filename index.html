@@ -37,7 +37,7 @@
       <div class="input__people">
         <div class="text">
           <label for="people">Number of People</label>
-          <label class="zero hidden" for="people">Can't be zero</label>
+          <label class="zero" id="hidden" for="people">Can't be zero</label>
         </div>
         <div class="input__people--container">
           <img src="images/icon-person.svg" alt="">
@@ -52,7 +52,7 @@
           <p class="output__tip--person">/ person</p>
         </div>
         <div class="output__tip--amount">
-          <p>$<span id="tipPerPerson">0.00</span></p>
+          <p>$<span id="tipPerPerson"></span></p>
         </div>
       </div>
       <div class="output__total">
@@ -61,11 +61,11 @@
           <p class="output__tip--person">/ person</p>
         </div>
         <div class="output__total--amount">
-          <p>$<span id="totalPerPerson">0.00</span></p>
+          <p>$<span id="totalPerPerson"></span></p>
           
         </div>
       </div>
-      <button onclick="reset()" class="output__reset">RESET</button>
+      <button onclick="updateDisplay()" class="output__reset">RESET</button>
     </div>
   </main>
 </body>
