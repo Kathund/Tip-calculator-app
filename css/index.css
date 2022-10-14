@@ -129,7 +129,7 @@ body main .input .input__people .text {
 body main .input .input__people .text .zero {
   color: #d43c0e;
 }
-body main .input .input__people .text .hidden {
+body main .input .input__people .text #hidden {
   display: none;
 }
 body main .input .input__people label {
